@@ -37,8 +37,12 @@ public class EVC_PLUS_PROJECT {
                     System.out.println("9. exit");
                     System.out.print("Dooro mid (1 ama 9): ");
                     choice = input.nextInt();
+
+                    //waa original haragaga
                     if (choice == 1) {
                         System.out.println("Haraagaagu waa: $" + haraagaagu);
+
+                        //waa kaarka hdalka iyo intu ukla baxo wana 1-5
                     } else if (choice == 2) {
                         do {
                             System.out.println("\nKaarka hadalka");
@@ -209,7 +213,6 @@ public class EVC_PLUS_PROJECT {
                                             break;
                                         }
                                     }
-
                                 } while (internetChoice != 5);
                             } else if (subChoice == 5) {
                                 System.out.print("Fadlan geli lambarka qofka aad ugu shubeyso: ");
@@ -251,6 +254,8 @@ public class EVC_PLUS_PROJECT {
                                 }
                             }
                         } while (subChoice != 6);
+
+                        //waa bixi biil iyo inta uu ka koban yahy 1-3
                     } else if (choice == 3) {
                         int billChoice;
                         do {
@@ -298,6 +303,8 @@ public class EVC_PLUS_PROJECT {
                                     break;
                             }
                         } while (billChoice != 3);
+
+                        //waa evcga saxda ah ee lcg wareejinta saxda waxana isticmaley arrey
                     } else if (choice == 4) {
                         input.nextLine();
                         while (true) {
@@ -347,6 +354,8 @@ public class EVC_PLUS_PROJECT {
                                 break;
                             }
                         }
+
+                        //waa warbixin kooban iyo inta ay kakoban tahy 1-5
                     } else if (choice == 5) {
                         int dooro;
                         do {
@@ -379,6 +388,8 @@ public class EVC_PLUS_PROJECT {
                             System.out.println("Mahadsanid, waxaa lagaa baxay.");
                         } while (dooro != 5);
                         System.out.println("mahadsanid.");
+
+                        //waa salama bank iyo inta ay kakoobantahay 1-5
                     } else if (choice == 6) {
                         int choice1;
                         do {
@@ -442,6 +453,8 @@ public class EVC_PLUS_PROJECT {
                                     break;
                             }
                         } while (choice1 != 5);
+
+                        //waa marreynta  waxuuna usameysan yahy method ahan iyo inta ay kakobantahy 1-6
                     } else if (choice == 7) {
                         int choice2;
                         language = "English";
@@ -511,6 +524,7 @@ public class EVC_PLUS_PROJECT {
                         } while (choice2 != 6);
                     }
 
+                    //waa bill payment waana keybta udanbeysay waana 1-4
                     else if (choice == 8) {
                         int choice3;
                         do {
@@ -530,7 +544,6 @@ public class EVC_PLUS_PROJECT {
                                     }
                                     break;
                                 }
-
                                 case 2: {
                                     if (!billPaid && billAmount > 0) {
                                         System.out.print("Fadlan geli lacagta: ");
@@ -547,7 +560,6 @@ public class EVC_PLUS_PROJECT {
                                     }
                                     break;
                                 }
-
                                 case 3: {
                                     if (billAmount > 0) {
                                         System.out.print("Fadlan geli lacagta aad rabto inaad bixiso: ");
@@ -575,7 +587,6 @@ public class EVC_PLUS_PROJECT {
         }else {
                 System.out.println("Code-ka waa khalad.");
             }
-
         }
     public static String changeLanguage(Scanner input, String currentLanguage) {
         System.out.println("Luqaddaada hadda waa: " + currentLanguage);
@@ -583,7 +594,6 @@ public class EVC_PLUS_PROJECT {
         System.out.println("2. English");
         System.out.print("Dooro luqad: ");
         int langChoice = input.nextInt();
-
         switch (langChoice) {
             case 1:
                 currentLanguage = "Somali";
